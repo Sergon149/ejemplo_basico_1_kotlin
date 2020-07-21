@@ -5,6 +5,7 @@ fun main(args: Array<String>) {
     funWithParams(5)
     varVsVal()
     basicLoop(5)
+    basicLoopItCustomized(6)
 }
 
 fun funWithoutParams(){
@@ -41,7 +42,7 @@ fun basicLoop(repetitions : Int){
 }
 
 fun basicLoopItCustomized(repetitions : Int){
-    println("=== Soy la función basicLoop ===")
+    println("=== Soy la función basicLoopItCustomized ===")
     // Sería equivalente a for (int i := 0; i < repetitions; i++)
     repeat(repetitions){ position ->
         println("Estoy repitiendo esto por $position vez de un total de $repetitions")
