@@ -36,8 +36,8 @@ fun varVsVal() {
 fun basicLoop(repetitions : Int){
     println("=== Soy la función basicLoop ===")
     // Sería equivalente a for (int i := 0; i < repetitions; i++)
-    repeat(repetitions){ position ->
-        println("Estoy repitiendo esto por $position vez de un total de $repetitions")
+    repeat(repetitions){
+        println("Estoy repitiendo esto por $it vez de un total de $repetitions")
     }
 }
 
