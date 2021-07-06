@@ -4,5 +4,6 @@ Este proyecto resumen muestra cómo se crean las funciones:
 - Sin parámetros.
 - Con un parámetro.
 - Con múltiples parámetros.
+- Devolviendo datos.
 
 También permite ver el contexto en el que una variable existe y puede ser usada.
