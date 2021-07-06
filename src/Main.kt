@@ -1,51 +1,18 @@
-import java.util.*
-
 fun main(args: Array<String>) {
-    println("Hello, world!")
+    println("Empezamos!")
     funWithoutParams()
     funWithParams(5)
-    varVsVal()
-    basicLoop(5)
-    basicLoopItCustomized(6)
+    val myVariableInMain = 10 // myVariableInMain nace
+    funWithParams(myVariableInMain) // myVariableInMain puede usarse
 }
 
 fun funWithoutParams(){
     println("=== Soy la función funWithoutParams ===")
 }
 
-fun funWithParams(number : Int){
+fun funWithParams(number : Int){ // Se crea una varialbe llamada number cuyo valor será el valor que hayamos mandado (5 y 10)
     println("=== Soy la función funWithParams ===")
     println("He recibido el número recibido $number")
+
 }
 
-fun varVsVal() {
-    println("=== Soy la función varVsVal ===")
-
-    // nueva variable
-    var textVariable = "Soy una variable"
-    println(textVariable)
-    textVariable = "Ahora valgo otra cosa"
-    println(textVariable)
-
-    // nueva constante
-    val textConstante = "Soy un valor fijo"
-    println(textConstante)
-    // No deja cambiar el valor. Si quitas el comentario de la linea siguiente dará error de compilación
-    // textConstante = "Nadie puede cambiar mi valor"
-}
-
-fun basicLoop(repetitions : Int){
-    println("=== Soy la función basicLoop ===")
-    // Sería equivalente a for (int i := 0; i < repetitions; i++)
-    repeat(repetitions){
-        println("Estoy repitiendo esto por $it vez de un total de $repetitions")
-    }
-}
-
-fun basicLoopItCustomized(repetitions : Int){
-    println("=== Soy la función basicLoopItCustomized ===")
-    // Sería equivalente a for (int i := 0; i < repetitions; i++)
-    repeat(repetitions){ position ->
-        println("Estoy repitiendo esto por $position vez de un total de $repetitions")
-    }
-}
