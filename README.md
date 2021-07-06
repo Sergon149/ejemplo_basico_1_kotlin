@@ -5,4 +5,4 @@ Este proyecto resumen muestra cómo se crean las funciones:
 - Con un parámetro.
 - Con múltiples parámetros.
 
-También permite ver el contexto en el una variable existe
+También permite ver el contexto en el que una variable existe y puede ser usada.
